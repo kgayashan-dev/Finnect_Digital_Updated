@@ -121,3 +121,16 @@ eas build -p ios --profile preview
 
 -- version change
 goto /android/app/build.gradle
+
+<!-- 
+ sudo npm install -g eas-cli
+
+eas login
+
+eas build:configure
+
+eas build -p android --profile production
+
+
+
+ -->

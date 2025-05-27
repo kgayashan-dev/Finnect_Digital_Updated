@@ -1,25 +1,26 @@
 {
-  "cli": {
-    "version": ">= 5.9.1"
-  },
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal",
+    "apk": {
       "android": {
         "buildType": "apk"
       }
     },
-    "preview": {
-      "distribution": "internal",
+    "aab": {
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleDebug"
       }
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease"
       }
     }
   }
-} 
+}
