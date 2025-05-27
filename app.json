@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "finnect-digital",
+    "name": "Finnect Digital",
     "slug": "finnect-digital",
     "version": "1.0.1",
     "orientation": "portrait",
@@ -9,9 +9,12 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finnect.digital"
     },
     "android": {
+      "package": "com.finnect.digital",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -28,7 +31,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -38,6 +41,13 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cc959269-9da7-4f7c-b5c2-bbe39b4de04a"
+      }
+    },
+    "owner": "orson992166"
   }
 }
